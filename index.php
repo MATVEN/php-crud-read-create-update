@@ -30,9 +30,9 @@
     </script>
 
     <!-- CSS: MY STYLE -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- JS: MY SCRIPT -->
-    <script src="script.js" charset="utf-8"></script>
+    <script src="assets/js/script.js" charset="utf-8"></script>
 
   </head>
 
