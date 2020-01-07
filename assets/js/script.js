@@ -19,7 +19,7 @@ function printData(data) {
 function getData() {
 
     $.ajax({
-      url: "getAllConfiguration.php",
+      url: "assets/php/getAllConfiguration.php",
       method: "GET",
       success: function(data) {
 
@@ -38,7 +38,7 @@ function getData() {
 
     $.ajax({
 
-        url: "newConfiguration.php",
+        url: "assets/php/newConfiguration.php",
         method: "POST",
         data: me.serialize(),
         success: function (data) {
@@ -63,7 +63,7 @@ function updateConfiguration() {
 
     $.ajax({
 
-        url: "updateConfigurazione.php",
+        url: "assets/php/updateConfigurazione.php",
         method: "POST",
         data: me.serialize(),
         success: function (data) {
@@ -87,7 +87,7 @@ function deleteConfiguration() {
 
     $.ajax({
 
-        url: "deleteConfigurazione.php",
+        url: "assets/php/deleteConfigurazione.php",
         method: "POST",
         data: me.serialize(),
         success: function (data) {
