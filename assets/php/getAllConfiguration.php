@@ -16,10 +16,10 @@
 
   $sql = "
 
-  SELECT * FROM confiurazioni
+  SELECT * FROM configurazioni
 
   ";
-  
+
   $res = $conn -> query($sql);
   if ($res -> num_rows < 1) {
 

@@ -18,17 +18,20 @@ function printData(data) {
 
 $(document).ready(function () {
 
-  $.ajax({
-    url: "getAllConfiguration.php",
-    method: "GET",
-    success: function(data) {
+  function getConfiguration() {
+    
+    $.ajax({
+      url: "getAllConfiguration.php",
+      method: "GET",
+      success: function(data) {
 
-        printData(data);
+          printData(data);
 
-    },
-    error: function(error) {
-      console.log("error", error);
-    }
-  });
+      },
+      error: function(error) {
+        console.log("error", error);
+      }
+    });
+  }
 
 })

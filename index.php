@@ -46,21 +46,21 @@
         <input type="submit" name="submit" value="New configuration">
     </form>
     <form id="mod-form">
-        <h3>Modify room</h3>
+        <h3>Change room</h3>
         <label for="title">Title:</label>
         <input type="text" name="title" value="New title"><br>
-        <label for="description">Descrizione:</label>
+        <label for="description">Description:</label>
         <input type="text" name="description" value="New description"><br>
         <label for="id">id: </label>
             <input type="text" name="id">
-            <input type="submit" name="submit" value="Modify">
+            <input type="submit" name="submit" value="Change">
     </form>
     <form id="del-form">
-        <h2>Elimina stanza</h2>
+        <h3>Delete room</h3>
 
-        <label for="title">Stanza da eliminare: </label>
+        <label for="title">Room deleted: </label>
             <input type="text" name="title">
-            <input type="submit" name="submit" value="Elimina configurazione">
+            <input type="submit" name="submit" value="Configuration delete">
     </form>
 
   <body>
