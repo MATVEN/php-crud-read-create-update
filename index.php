@@ -43,24 +43,25 @@
       <label for="description">Description:</label>
       <input type="text" name="description" value="New description"><br>
       <input type="submit" name="submit" value="New configuration">
-   </form>
-     <form id="mod-form">
-        <h3>Change room</h3>
-        <label for="title">Title:</label>
-        <input type="text" name="title" value="New title"><br>
-        <label for="description">Description:</label>
-        <input type="text" name="description" value="New description"><br>
-        <label for="id">id: </label>
-            <input type="text" name="id">
-            <input type="submit" name="submit" value="Change">
-      </form>
-     <form id="del-form">
-        <h3>Delete room</h3>
+    </form>
 
-        <label for="title">Room deleted: </label>
-        <input type="text" name="title">
-        <input type="submit" name="submit" value="Configuration delete">
-      </form>
+    <form id="mod-form">
+      <h3>Change room</h3>
+      <label for="title">Title:</label>
+      <input type="text" name="title" value="New title"><br>
+      <label for="description">Description:</label>
+      <input type="text" name="description" value="New description"><br>
+      <label for="id">id: </label>
+      <input type="text" name="id">
+      <input type="submit" name="submit" value="Change">
+    </form>
+
+    <form id="del-form">
+      <h3>Delete room</h3>
+      <label for="title">Room deleted: </label>
+      <input type="text" name="title">
+      <input type="submit" name="submit" value="Configuration delete">
+    </form>
 
   <body>
     <div id="container" class="container">
