@@ -16,10 +16,8 @@ function printData(data) {
   }
 };
 
-$(document).ready(function () {
+function getData() {
 
-  function getConfiguration() {
-    
     $.ajax({
       url: "getAllConfiguration.php",
       method: "GET",
@@ -34,4 +32,82 @@ $(document).ready(function () {
     });
   }
 
-})
+  function putNewConfigurazione() {
+
+    var me = $(this);
+
+    $.ajax({
+
+        url: "newConfiguration.php",
+        method: "POST",
+        data: me.serialize(),
+        success: function (data) {
+
+            if (data) {
+
+                getData(data);
+            }
+        },
+        error: function (error) {
+
+            console.log("error", error);
+        }
+    });
+
+    return false;
+}
+
+function updateConfiguration() {
+
+    var me = $(this);
+
+    $.ajax({
+
+        url: "updateConfigurazione.php",
+        method: "POST",
+        data: me.serialize(),
+        success: function (data) {
+            if (data) {
+
+                getData(data);
+            }
+        },
+        error: function (error) {
+
+            console.log("error", error);
+        }
+    });
+
+    return false;
+}
+
+function deleteConfiguration() {
+
+    var me = $(this);
+
+    $.ajax({
+
+        url: "deleteConfigurazione.php",
+        method: "POST",
+        data: me.serialize(),
+        success: function (data) {
+            if (data) {
+
+                getData(data);
+            }
+        },
+        error: function (error) {
+
+            console.log("error", error);
+        }
+    });
+
+    return false;
+}
+
+$(document).ready(function () {
+    getData();
+    $("#add-form").submit(newConfiguration);
+    $("#mod-form").submit(updateConfiguration);
+    $("#del-form").submit(deleteConfiguration);
+});

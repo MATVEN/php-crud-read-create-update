@@ -2,7 +2,7 @@
 
 header('Content-Type: application/json');
 
-list($title, $description,$id) = [
+list($title, $description, $id) = [
 
     $_POST['title'],
     $_POST['description'],
@@ -22,7 +22,7 @@ $password = "root";
 $dbname = "hoteldb";
 $conn = new mysqli($server, $username, $password, $dbname);
 
-if ($conn-> connect_errno) {
+if ($conn -> connect_errno) {
 
     echo json_encode(-1);
 

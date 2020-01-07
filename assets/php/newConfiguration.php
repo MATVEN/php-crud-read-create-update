@@ -21,7 +21,7 @@ $password = "root";
 $dbname = "hoteldb";
 $conn = new mysqli($server, $username, $password, $dbname);
 
-if ($conn->connect_errno) {
+if ($conn -> connect_errno) {
 
     echo json_encode(-1);
 
