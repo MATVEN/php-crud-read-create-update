@@ -27,7 +27,7 @@
     return;
   }
 
-  $conf = [];
+  $confs = [];
   while($conf = $res -> fetch_assoc()) {
 
     $confs[] = $conf;
