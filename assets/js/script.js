@@ -32,7 +32,7 @@ function getData() {
     });
   }
 
-  function putNewConfigurazione() {
+  function newConfiguration() {
 
     var me = $(this);
 
