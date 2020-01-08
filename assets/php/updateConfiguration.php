@@ -39,6 +39,8 @@ $sql = "
 
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ssi", $title, $description, $id);
+
 $res = $stmt->execute();
+$conn->close();
 
 echo json_encode($res);

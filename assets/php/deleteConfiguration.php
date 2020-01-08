@@ -36,5 +36,6 @@ $sql = "
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i",$id);
 $res = $stmt->execute();
+$conn->close();
 
 echo json_encode($res);
